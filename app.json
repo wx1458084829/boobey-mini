@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/study/study",
+    "pages/job/job",
+    "pages/all_detail/all_detail",
+    "pages/search/search",
+    "pages/detail-word/detail-word",
+    "pages/me/me",
+    "pages/choice/choice",
+    "pages/test/test",
+    "pages/collect_card/collect_card",
+    "pages/audio_test/audio_test",
+    "pages/about/about",
+    "pages/my_word/my_word",
+    "pages/suggestion/suggestion",
+    "pages/vs/vs"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#00BFFF",
+    "navigationBarTitleText": "BooBey单词",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh":true
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#000",
+    "backgroundColor": "#00BFFF",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/study/study",
+        "text": "学习",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home2.png"
+      },
+      {
+        "pagePath": "pages/job/job",
+        "text": "选择",
+        "iconPath": "images/choice.png",
+        "selectedIconPath": "images/choice2.png"
+      },
+      
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "images/我的.png",
+        "selectedIconPath": "images/我的2.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

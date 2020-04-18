@@ -1,0 +1,13 @@
+<view class="container">
+    <canvas canvas-id="lineCanvas" disable-scroll="true" class="canvas" bindtouchstart="touchHandler" bindtouchmove="moveHandler" bindtouchend="touchEndHandler"></canvas>
+    
+    <view class='statistic'>
+       <view class='rember'>熟悉   |  今日:{{today_rem}}   |  总计:{{rem}}  | 权重大于0.7的为熟悉</view>
+       <view class='mohu'>模糊    |  今日:{{today_mohu}}   |  总计:{{mohu}}  | 权重0.4~0.7的为模糊</view>
+       <view class='forget'>忘记    |  今日:{{today_forget}}   |  总计:{{forget}} | 权重小于0.4的为忘记</view>
+       <view class='total'>新词权重为0.5，忘记或模糊会减少权重，提前安排复习</view>
+       <view class='total'>加入计划的单词    {{total_word}} </view>
+    </view>
+    <image src='../../images/c3.gif' style="width: 100%;  " mode="scaleToFill" ></image>
+    <ad unit-id="adunit-65b5af1a9a993636"></ad>
+</view>

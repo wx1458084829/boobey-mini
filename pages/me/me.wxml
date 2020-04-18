@@ -1,0 +1,91 @@
+<!--pages/me/index.wxml-->
+<view class='page'>
+
+<button class='userinfo' open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+   <view class='user_pic'>
+       <image class='user_pic' background-size="cover" src='{{userInfo.avatarUrl}}'></image> 
+   </view>
+   <view class='user_detail' > 
+     <view style='font-size: 16px; font-weight:700;text-align:center;height:30px;'>Hi , {{user_note}}
+     </view>
+    
+   </view>
+</button>
+
+
+ <view class='study_set'>
+
+   <view  class='study_set_block'>
+     <view class='left_block'>
+        <view class='day_num_title'>每日学习量</view>
+        <view class='day_num_note'>当日复习的词量 + 当日新学词量</view>
+     </view>
+     <view class='input_content'>
+      <input class='right_block_content' type="number" bindinput="voteTitle" placeholder="{{day_task}}" ></input>
+     </view>
+   </view>
+
+
+    <view  class='study_set_block'>
+     <view class='left_block'>
+        <view class='day_num_title'>已加入学习计划的单词量</view>
+     </view>
+
+     <view class='right_block'>
+      <view style='margin:auto'>{{add_word_num}}</view>
+     </view>
+   </view>
+   
+
+      <view  class='study_set_block'>
+     <view class='left_block'>
+        <view class='day_num_title'>连续签到天数</view>
+     </view>
+     <view class='right_block'> {{complete_day}}</view>
+   </view>
+
+
+   <view  class='study_set_block' bindtap='my_word_list'>
+     <view class='left_block'>
+        <view class='day_num_title' >我加入计划的单词</view>
+     </view>
+   </view>
+
+
+
+   <view  class='study_set_block' bindtap='test_card'>
+     <view class='left_block'>
+        <view class='day_num_title' >词汇测试</view>
+     </view>
+   </view>
+
+<view  class='study_set_block' bindtap='jumpduizhan'>
+     <view class='left_block'>
+        <view class='day_num_title' >好友对战</view>
+     </view>
+   </view>
+
+   <view  class='study_set_block' bindtap='jumptj'>
+     <view class='left_block'>
+        <view class='day_num_title' >统计</view>
+     </view>
+   </view>
+
+      <view  class='study_set_block' bindtap='suggestion'>
+     <view class='left_block'>
+        <view class='day_num_title' >意见反馈 </view>
+     </view>
+   </view> 
+</view>
+<view style='margin: 2%; border-radius: 5px;'>
+ <official-account></official-account>
+ <image style="width: 100%; " mode="scaleToFill" src='../../images/t1.png'></image>
+
+ </view>
+</view>
+
+
+
+
+
+
