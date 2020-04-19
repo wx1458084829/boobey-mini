@@ -1,6 +1,6 @@
 <view class="page">
   <view class="input_counter">
-    <input class="input" placeholder="请输入单词" bindinput="voteTitle"> </input>
+    <input class="input" placeholder="input please" bindinput="voteTitle"> </input>
   </view>
   <view wx:if="{{simple}}" class="simple_look" bindtap="detail"> {{voteTitle}}</view>
   <view wx:if="{{(!(simple)&&(detail))&&status_code==0}}" class="simple_look">
