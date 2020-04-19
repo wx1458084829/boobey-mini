@@ -74,6 +74,7 @@ Page({
     wx.showToast({ title: '提交成功' })
     const query = Bmob.Query('suggestion');
     query.set("content", this.data.voteTitle)
+    console.log(wx.getStorageSync("userInfo").nickName)
     query.set("name", wx.getStorageSync("userInfo").nickName)
     query.save().then(res => {
       console.log(res)
