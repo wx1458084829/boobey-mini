@@ -32,21 +32,21 @@
       {
         "pagePath": "pages/study/study",
         "text": "学习",
-        "iconPath": "images/home.png",
-        "selectedIconPath": "images/home2.png"
+        "iconPath": "images/home2.png",
+        "selectedIconPath": "images/home.png"
       },
       {
         "pagePath": "pages/job/job",
         "text": "选择",
-        "iconPath": "images/choice.png",
-        "selectedIconPath": "images/choice2.png"
+        "iconPath": "images/choice2.png",
+        "selectedIconPath": "images/choice.png"
       },
       
       {
         "pagePath": "pages/me/me",
         "text": "我的",
-        "iconPath": "images/我的.png",
-        "selectedIconPath": "images/我的2.png"
+        "iconPath": "images/我的2.png",
+        "selectedIconPath": "images/我的.png"
       }
     ]
   },

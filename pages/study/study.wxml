@@ -80,8 +80,8 @@
 <view wx:if="{{!(showNot)&&!(goto_choice)&&!(cpt)}}" class="content" bindtap='show'>
 
     <view class='detect'>
-        <view>大声把英文发音和中文解释说出口！</view>
-        <view style='color: #83c41a;;'>点击屏幕查看答案</view>
+        <view>读出单词并翻译</view>
+        <view style='color: #83c41a;;'>查看答案</view>
     </view>
 
   <view class='ok'>
@@ -91,9 +91,9 @@
 
 <view wx:if="{{cpt}}" class='content_cpt'>
    <view class='detect2'>
-        <view>太棒啦!今天的任务都完成了</view>
-        <view style='color: #83c41a;'>这是你的第{{complete_day_num}}天签到</view>
-        <view style='color: #777; font-size: 14px;font-weight: 300;'>获得10个单词上限</view>
+        <view>厉害了!今天的任务都完成了</view>
+       
+       
 
 <view class='canvas_content'>
     <canvas canvas-id="pieCanvas" class="canvas" style="height:300px" bindtouchstart="touchHandler"></canvas>
@@ -103,9 +103,7 @@
 
 
     </view>
-    <view class='ok'>
-     <view class='bottomline'>将小鸡单词分享给好友可以获得5个单词上限哦</view>
-  </view>
+    
 </view>
 
 

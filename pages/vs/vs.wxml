@@ -27,20 +27,20 @@
 
 
 <view wx:if="{{!(showDaan)}}" class="content">
-   <view class="button-1" bindtap="choice" id="{{da4}}">
+   <view class="button-1" bindtap="" id="{{da4}}">
       <text class="word-miss" >{{da4}}</text>
     </view>
-    <view class="button-2" bindtap="choice" id="{{da3}}" >
+    <view class="button-2" bindtap="" id="{{da3}}" >
       <text class="word-miss" >{{da3}}</text>
     </view>
-        <view class="button-3" bindtap="choice" id="{{da2}}" >
+        <view class="button-3" bindtap="" id="{{da2}}" >
       <text class="word-miss" >{{da2}}</text>
     </view>
-        <view class="button-4" bindtap="choice" id="{{da1}}" >
+        <view class="button-4" bindtap="" id="{{da1}}" >
       <text class="word-miss" >{{da1}}</text>
     </view>
 </view>
-<view wx:if="{{showDaan}}" class="content" >
+<!-- <view wx:if="{{showDaan}}" class="content" >
        <view class="button-5" bindtap="choice" id="{{da1}}">
       <text class="word-miss" >{{true_word}}</text>
     </view>
@@ -49,14 +49,14 @@
     </view>
        <view wx:if="{{!(daan)}}" class="button-7" bindtap="choice" id="{{da1}}">
       <text class="word-miss" >回答错误</text>
-    </view>
-       <view wx:if="{{!(complete)}}" class="button-8" bindtap="next" >
+    </view> -->
+       <!-- <view wx:if="{{!(complete)}}" class="button-8" bindtap="next" >
       <text class="word-miss" >下一个</text>
-    </view>
+    </view> -->
 
 
      <view wx:if="{{complete}}" class="have_done">
-    <view class="first_notice">{{true_num}}</view>
+    <!-- <view class="first_notice">{{true_num}}</view>
     <view class="haoyou">好友挑战</view>
     <view class="history">历史最高分:{{history}}</view>
     <view class="paihan">
@@ -103,17 +103,15 @@
                <view class="first_name">{{userInfo.nickName}}</view>
            </view>
            <view style="  padding: 12px;">{{history}}</view>
-       </view>      
-    </view>
+       </view>     
+    </view> --> 
     <view class="start_botton" bindtap="again">
        <view class="look_me">再来一局</view>
     </view>
-        <button open-type="share" class="cancle_botton" bindtap="share">
-       <view class="look_me">好友分享</view>
-    </button>
-</view>
+       
+<!-- </view>-->
 
 
-</view>
+</view> 
 
 </view>

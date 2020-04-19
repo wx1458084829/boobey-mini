@@ -39,7 +39,20 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.search()
+    this.search();
+
+    var index = 1;
+    var timer = setInterval(function () {
+       this.next()
+      if (index == 10) {
+        clearInterval(timer)
+      }
+      console.log('5s执行1次且index+1,等于10停止 index:', index);
+      index = index + 1;
+     
+
+    }, 5000);
+
     
   },
 
@@ -89,9 +102,7 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function (options) {
-    return {
-      title:"我在BooBey单词测试，答对了"+this.data.true_num+"道题，你也快来测一测吧！",
-    }
+   
 
   },
   choice(e){
