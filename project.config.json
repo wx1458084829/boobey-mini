@@ -22,8 +22,8 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.10.4",
-	"appid": "wx1bc0de41813b6547",
-	"projectname": "%E5%B0%8F%E9%B8%A1%E5%8D%95%E8%AF%8D",
+	"appid": "wxe83a8b8a4be3d40b",
+	"projectname": "BooBey",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
 	"condition": {
