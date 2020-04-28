@@ -1,4 +1,3 @@
-
 var wxCharts = require('../../utils/wxcharts.js');
 var app = getApp();
 var pieChart = null;
@@ -24,16 +23,14 @@ Page({
     this.setData({
       time: time,        //日期
       day_num: wx.getStorageSync('day_task'), //每天任务量
-
     })
+    //初始化今天的任务
     if(!wx.getStorageSync('today_detail') || wx.getStorageSync('today_detail')===undefined){
       wx.setStorage({
         key: 'today_detail',
         data: { "day": this.data.time, "rem": 0, "mohu": 0, "forget": 0 }
       })
     }
-
-
     //如果是新的一天，调用new_day函数
     if (time != wx.getStorageSync("day")) {
       this.new_day();
@@ -49,7 +46,6 @@ Page({
 
     //如果单词列表的词不够，要求用户先去选词
     if (this.data.today_word.length < this.data.day_num) {
-
       this.setData({
         goto_choice: true,
         bottomline: "在词库里挑选自己每天要背的单词！"
@@ -65,7 +61,6 @@ Page({
         this.setData({
           counter: n
         })
-        
         this.search(this.data.today_word[n].word)
       } else {
         if (!wx.getStorageSync("first_login")) this.complete()  //登陆时判断是否今天已完成
@@ -99,8 +94,6 @@ Page({
 
   onReady: function () {
   },
-
-
   //当用页面重新展示时调用函数
   onShow: function() {
     this.setData({
@@ -117,7 +110,6 @@ Page({
       this.setData({
         goto_choice: false
       })
-      
       //加载第一个单词
       var today_task = wx.getStorageSync('task')
       var length = today_task.length
@@ -172,23 +164,21 @@ Page({
       title: options.target.id,
       path: '/pages/study/study',
       success: function(res) {
-        wx.setStorage({
-          key: 'my_word_num',
-          data: wx.getStorageSync("my_word_num")+5,
-        })
-        wx.setStorage({
-          key: 'free_word_num',
-          data: wx.getStorageSync("free_word_num") + 5,
-        })
+        // wx.setStorage({
+        //   key: 'my_word_num',
+        //   data: wx.getStorageSync("my_word_num")+5,
+        // })
+        // wx.setStorage({
+        //   key: 'free_word_num',
+        //   data: wx.getStorageSync("free_word_num") + 5,
+        // })
       }
     }
-
   },
 
 
   //用户点击认识
   next: function() {
-
     var temp = this.data.counter;
     //判断当前单词是否最后一个单词，并准备加载下一个单词
     var today_task = wx.getStorageSync('task')
@@ -311,8 +301,6 @@ Page({
       data: today_task
     })
     this.search(this.data.today_word[n].word)
-
-    
     if (this.data.task_detail[temp].rem === 0 && this.data.task_detail[temp].mohu === 0 && this.data.task_detail[temp].forget === 0) {
       var td = wx.getStorageSync('today_detail');
       td.mohu = td.mohu + 1;
@@ -365,9 +353,10 @@ Page({
 
   //单词发音触发函数
   read: function(e) {
-    const innerAudioContext = wx.createInnerAudioContext()
+    var innerAudioContext = wx.createInnerAudioContext()
     innerAudioContext.autoplay = true
     innerAudioContext.src = e.target.id
+    console.log(e.target.id)
     innerAudioContext.onPlay(() => {})
     innerAudioContext.onError((res) => {
       console.log(res.errMsg)
@@ -414,7 +403,7 @@ Page({
     } catch (e) {
       console.error('getSystemInfoSync failed!');
     }
-
+    //调用画布绘图
     pieChart = new wxCharts({
       animation: true,
       canvasId: 'pieCanvas',
@@ -649,11 +638,13 @@ Page({
     })
   },
 
+/**
+ * 跳转选词
+ * 
+ */
   goto_choice() {
-    wx.navigateTo({
-      url: '../job/job',
+    wx.switchTab({
+      url: '../job/job'
     })
-  },
-  
-
+  }
 })

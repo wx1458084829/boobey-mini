@@ -32,17 +32,18 @@ Page({
     var mohu = [];
     var forget = [];
     var all_detail=wx.getStorageSync("all_detail");
+    var day = wx.getStorageSync("day_num");
     var length=all_detail.length;
     if(length===0){
-      for(var i=0;i<15;i++){
+      for(var i=0;i<day;i++){
         categories.push('2018-10-'+i);
         rem.push(50+Math.random() * (25 - 10) + 10);
         mohu.push(30 + Math.random() * (25 - 10) + 10);
         forget.push(20 + Math.random() * (25 - 10) + 10)
       }
     }
-    else if(length<15){
-      for (var i = 0; i < 15; i++) {
+    else if(length<day){
+      for (var i = 0; i < day; i++) {
         if(i<length){
           categories.push(all_detail[i].day);
           rem.push(all_detail[i].rem);
@@ -60,7 +61,7 @@ Page({
       
     }
     else {
-      for (var i = 0; i < 15; i++) {
+      for (var i = 0; i < day; i++) {
           categories.push(all_detail[i].day);
           rem.push(all_detail[i].rem);
           mohu.push(all_detail[i].mohu);

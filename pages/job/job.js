@@ -194,14 +194,6 @@ Page({
       title: options.target.id,
       path: '/pages/study/study',
       success: function (res) {
-        wx.setStorage({
-          key: 'my_word_num',
-          data: wx.getStorageSync("my_word_num") + 5,
-        })
-        wx.setStorage({
-          key: 'free_word_num',
-          data: wx.getStorageSync("free_word_num") + 5,
-        })
       }
     }
   },
@@ -254,33 +246,67 @@ Page({
     }
 
   },
-
+/**
+ * 添加单词
+ */
   choice_word(e) {
-    var add = e.currentTarget.id;
-    var word = {
-      "word": add,
-      "ease": 0.5,
-      "day": 0
-    };
-    var wordlist = wx.getStorageSync("word_list");
-    wordlist.push(word);
-    wx.setStorageSync("word_list", wordlist);
-    var list = this.data.book_list;
-    var len = list.length;
-    var i = 0;
-    for (var i = 0; i < len; i++) {
-      if (list[i] == add) break;
+    var isLogon = false
+    wx.getStorage({
+      key: 'userInfo',
+      success(res) {
+        // console.log(res.data)
+      }
+    })
+    try {
+      var value = wx.getStorageSync('userInfo')
+      if (value) {
+       isLogon = true
+      }else{
+       isLogon = false
+      }
+    } catch (e) {
+      // Do something when catch error
     }
-    list.splice(i, 1);
-    var book = wx.getStorageSync("book");
-    wx.setStorageSync(book, list);
-    this.setData({
-      book_list: list,
-      my_word: this.data.my_word + 1,
-      today_had_choice: this.data.today_had_choice + 1
-    });
+    //判断是否登录
+    if(!isLogon){
+      wx.showToast({
+        title: '请登录后操作',
+        icon: 'none',
+        duration: 2000,
+        success:function(e){
+          setTimeout(function () {
+            wx.switchTab({
+              url: '../me/me'
+            }) 
+          }, 2000)
+        }
+      }) 
+    }else{
+      var add = e.currentTarget.id;
+      var word = {
+        "word": add,
+        "ease": 0.5,
+        "day": 0
+      };
+      var wordlist = wx.getStorageSync("word_list");
+      wordlist.push(word);
+      wx.setStorageSync("word_list", wordlist);
+      var list = this.data.book_list;
+      var len = list.length;
+      var i = 0;
+      for (var i = 0; i < len; i++) {
+        if (list[i] == add) break;
+      }
+      list.splice(i, 1);
+      var book = wx.getStorageSync("book");
+      wx.setStorageSync(book, list);
+      this.setData({
+        book_list: list,
+        my_word: this.data.my_word + 1,
+        today_had_choice: this.data.today_had_choice + 1
+      });
+    }
   },
-
   sort_wordlist() {
     var last_list = wx.getStorageSync("word_list");
     var len2 = last_list.length;

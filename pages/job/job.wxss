@@ -4,14 +4,13 @@ page{
 }
 
 .job_day{
- 
    margin: 2%;
   border-radius: 5px;
    width: 96%;
    height: 400rpx;
    display: flex;
    flex-direction: column;
-   background-image: url(https://picture-1256429518.cos.ap-chengdu.myqcloud.com/blog/wxbg2.jpg);
+   /* background-image: "/images/wxbg2.jpg"; */
   background-repeat: round;
   opacity: 0.8;
 

@@ -2,7 +2,7 @@
 <view wx:if="{{!(showNot)&&!(cpt)}}" class="job_day">
   <view class="day_num">{{content}}</view>
     <view class="pron-container">
-     <!-- <image class="pron-icon" bindtap="read" id="{{pron_audio.us[0]}}" src="/images/cute.png"></image> -->
+     <image class="pron-icon" bindtap="read" id="{{pron_audio.us[0]}}" src="/images/cute.png"></image>
       <text class="word-pron" bindtap="read" id="{{pron_audio.us[0]}}">/{{pron.uk}}/</text>
     </view>
 
@@ -42,9 +42,9 @@
 
 
     <view class="ok">
-        <button class='myButton1'  bindtap="next">Remember</button>
-        <button class='myButton2' bindtap='mohu'>Blur</button>
-        <button class='myButton3' bindtap='forget'>Forget</button>
+        <button class='myButton1'  bindtap="next">认识</button>
+        <button class='myButton2' bindtap='mohu'>模糊</button>
+        <button class='myButton3' bindtap='forget'>忘记</button>
     </view>
 </view>
 
@@ -58,7 +58,6 @@
       </block>
   </view>
   </view>
-
       <image class="sc2" style="width: 20px; height: 20px; " catchtap="handleSaveTap" mode="scaleToFill" src="../../images/sc2.png"></image>
       <button open-type="share" style="width: 20px; height: 20px;" class="zf" id="{{id1}}" > <image class="zf" style="width: 20px; height: 20px;" catchtap="handlezfTap" mode="scaleToFill" src="../../images/zf.png"></image>  </button>
   </view>
@@ -68,9 +67,9 @@
 
 
 <view wx:if="{{goto_choice&&!(cpt)}}" class='content' bindtap='goto_choice'>
-    <view class='detect'>
+    <view class='detect' >
         <view>你今天需要选择 {{today_new_num}}个新单词！</view>
-        <view style='color: #83c41a;'>在词库中选取</view>
+        <view style='color: #83c41a;' bindlongtap="goto_choice">在词库中选取</view>
     </view>
     <view class='ok'>
      <view class='bottomline'>每天的新词数根据平常学习情况而定</view>
@@ -92,9 +91,6 @@
 <view wx:if="{{cpt}}" class='content_cpt'>
    <view class='detect2'>
         <view>厉害了!今天的任务都完成了</view>
-       
-       
-
 <view class='canvas_content'>
     <canvas canvas-id="pieCanvas" class="canvas" style="height:300px" bindtouchstart="touchHandler"></canvas>
 </view>

@@ -18,11 +18,13 @@
 			"ignore": [],
 			"disablePlugins": [],
 			"outputPath": ""
-		}
+		},
+		"useCompilerModule": true,
+		"userConfirmedUseCompilerModuleSwitch": false
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.10.4",
-	"appid": "wxe83a8b8a4be3d40b",
+	"appid": "wx1bc0de41813b6547",
 	"projectname": "BooBey",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},

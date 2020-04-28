@@ -21,7 +21,7 @@
         <view class='day_num_note'>当日复习的词量 + 当日新学词量</view>
      </view>
      <view class='input_content'>
-      <input class='right_block_content' type="number" bindinput="voteTitle" placeholder="{{day_task}}" ></input>
+      <input  class='right_block_content' type="number" bindblur="voteTitle" placeholder="{{day_task}}" value="{{day_task}}"></input>
      </view>
    </view>
 
@@ -53,7 +53,7 @@
 
 
 
-   <view  class='study_set_block' bindtap='test_card'>
+   <!-- <view  class='study_set_block' bindtap='test_card'>
      <view class='left_block'>
         <view class='day_num_title' >词汇测试</view>
      </view>
@@ -63,7 +63,7 @@
      <view class='left_block'>
         <view class='day_num_title' >好友对战</view>
      </view>
-   </view>
+   </view> -->
 
    <view  class='study_set_block' bindtap='jumptj'>
      <view class='left_block'>
