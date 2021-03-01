@@ -1,4 +1,4 @@
-
+//总词汇
 var word_list = 
     ['abacus',
 'abandon',

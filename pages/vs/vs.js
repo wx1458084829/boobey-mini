@@ -1,7 +1,7 @@
 // pages/test/test.js
 
-var Bmob = require('../../dist/Bmob-1.6.4.min.js');
-Bmob.initialize("你的bmob云appid", "你的bmob云密钥");
+// var Bmob = require('../../dist/Bmob-1.6.4.min.js');
+// Bmob.initialize("你的bmob云appid", "你的bmob云密钥");
 var list = require('../../data/vocabulary.js')
 //var qcloud = require('../../vendor/wafer2-client-sdk/index')
 //var config = require('../../config')
@@ -206,7 +206,7 @@ Page({
     
     if(!wx.getStorageSync("diary_id"))
     {
-      const query = Bmob.Query('diary');
+      // const query = Bmob.Query('diary');
       query.set("score", score)
       query.set("head_url", wx.getStorageSync('userInfo').avatarUrl)
       query.set("title", wx.getStorageSync('userInfo').nickName)
@@ -244,7 +244,7 @@ Page({
   },
   getRankGlobalData() {//加载全球排名的数据
 
-    const query = Bmob.Query('diary');
+    // const query = Bmob.Query('diary');
     //query.limit(10);
     query.order("score");
     query.find().then(res => {

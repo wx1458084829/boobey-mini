@@ -1,8 +1,8 @@
 /* pages/detail-word/detail-word.wxss */
 @import "../study/study.wxss";
 .page{
-    background-image: url('https://upload-images.jianshu.io/upload_images/4179819-a2a42aa749ca2630.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/480');
-    height: 100%;
+    background-image: url('https://s1.ax1x.com/2020/06/09/t5oM90.jpg');
+    height: 60%;
     width: 100%;
     background-size: cover;
 }

@@ -1,7 +1,6 @@
+//考研核心
 var word_list=
 ['process',
-
-
   'growth',
   'technology',
   'theory',

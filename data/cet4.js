@@ -1,4 +1,4 @@
-
+//四级词汇
 
 var word_list=
 [ 'sincere',

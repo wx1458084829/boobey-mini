@@ -1,5 +1,5 @@
+//六级核心
 var word_list=[
-
   'hospitality',
   'pastime',
   'revenue',

@@ -1,0 +1,131 @@
+<!--pages/search/search.wxml-->
+<!-- 搜索框 -->
+<van-search
+ value="{{ value }}"
+ placeholder="请输入~"
+ show-action
+ input-align="center"
+ bind:search="onSearch"
+ background="#a4d8fa"
+ shape="round"
+ bind:cancel="onCancel"
+ bind:change="onSearchChange"
+/>
+<!-- 拍照识别和语音识别按钮 -->
+<van-grid
+ clickable
+ column-num="2"
+ wx:if="{{(!ishow&&!issentence)}}"
+>
+	<!-- 拍照识别 -->
+	<van-grid-item
+	 icon="https://s1.ax1x.com/2020/06/11/t76rrj.png"
+	 link-type="navigateTo"
+	 bind:click="aiphoto"
+	/>
+	<!-- 语音识别  -->
+	<van-grid-item
+	 icon="https://s1.ax1x.com/2020/06/11/t76XRO.png"
+	 link-type="reLaunch"
+	 bindtap="saybindtap"
+	/>
+</van-grid>
+
+<!-- 展示单词的页面 -->
+<view
+ wx:if="{{ishow}}"
+ class="simple_look"
+ bindtap="detail"
+> {{content}}
+</view>
+<view wx:if="{{ishow}}" class="simple_look">
+	<image
+	 class="sc2"
+	 style="width: 20px; height: 20px; "
+	 mode="scaleToFill"
+	 wx:if="{{ !issave}}"
+	 src="../../images/sc2.png"
+	 bindtap="addword"
+	></image>
+	<image
+	 class="sc2"
+	 style="width: 20px; height: 20px; "
+	 mode="scaleToFill"
+	 wx:if="{{ issave}}"
+	 src="../../images/sc.png"
+	 bindtap="delword"
+	></image>
+	<image
+	 class="read"
+	 src='../../images/yuying.png'
+	 style="width: 20px; height: 20px; "
+	 mode="scaleToFill"
+	 bindtap='read'
+	></image>
+	<button open-type="share">
+		<image
+		 class="sc"
+		 style="width: 20px; height: 20px; "
+		 src='../../images/zf.png'
+		 mode="scaleToFill"
+		></image>
+	</button>
+	<view class='fayin' style="font-size:45rpx;"> {{content}} </view>
+	<view style="font-size:45rpx;">【{{pronunciation}}】</view>
+	<view class='fayin'>{{definition}}</view>
+	<view style="height:20px;"></view>
+	循环输出每个例句
+	<view wx:for="{{defen}}" wx:key="key">
+		<view> {{item.first}}
+			<view style="color:#00BFFF;display:inline;">　{{item.mid}}　</view>
+			{{item.last}}
+		</view>
+		<view>{{item.translation}}</view>
+		-输出最后没有隔断
+		<view wx:if="{{defen.length-1>index}}">
+			<view style="height:20px;"></view>
+		</view>
+	</view>
+</view>
+
+<!--如果是句子-->
+<view class="simple_look1" wx:if="{{issentence}}">
+	<view class="en_k">
+		<view>
+			<view class=" en_in" style="width:90%;font-size: 25px;font-family: Songti TC;word-break:break-all;margin-left:5%;margin-right:5%">{{translation_a}}
+			</view>
+		</view>
+	</view>
+	<view class="tran_re">翻译结果：</view>
+	<view class="ch_k">
+		<view>
+			<view class="ch_in" style="width:90%;font-size: 25px;font-family: Songti TC;word-break:break-all;margin-left:5%;margin-right:5%">{{translation_b}}
+			</view>
+		</view>
+	</view>
+</view>
+<!-- 弹出的说话特效 -->
+<van-action-sheet
+ show="{{ show }}"
+ bind:close="onClose"
+ bind:select="onSelect"
+>
+	<view wx:if="{{is_pic_show}}">
+		<image style=" margin-left:5%" src="../../images/y1.gif"> </image>
+	</view>
+	<view class="speak">
+		<view
+		 class="speak_in"
+		 bindtouchstart='ontap'
+		 bindtouchend='onClose'
+		>{{voice_content}}
+		</view>
+	</view>
+</van-action-sheet>
+
+<van-tabbar active="{{ active }}" bind:change="onChange">
+	<van-tabbar-item icon="wap-home-o">首页</van-tabbar-item>
+	<van-tabbar-item icon="search">搜索</van-tabbar-item>
+	<van-tabbar-item icon="user-circle-o">我的</van-tabbar-item>
+</van-tabbar>
+

@@ -1,3 +1,4 @@
+//考研词汇
 var word_list=[
   'assault',
   'steamer',

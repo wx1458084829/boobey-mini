@@ -1,0 +1,17 @@
+<view class="container">
+	<canvas
+	 canvas-id="lineCanvas"
+	 disable-scroll="true"
+	 class="canvas"
+	 bindtouchstart="touchHandler"
+	 bindtouchmove="moveHandler"
+	 bindtouchend="touchEndHandler"
+	></canvas>
+	<canvas
+	 canvas-id="pieCanvas"
+	 class="canvas"
+	 style="height:300px"
+	 bindtouchstart="touchHandler"
+	></canvas>
+</view>
+

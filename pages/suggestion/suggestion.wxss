@@ -1,12 +1,14 @@
 /* pages/suggestion/suggestion.wxss */
 
 .my_bg{
-  height: 1200rpx;
+  height: 620px;
   width: 100%;
-  background-color: #f7dab0;
+  background-color:#a4d8fa;
+  padding-top: 80px;
 
 }
 .input_content{
+  padding-top: 2%;
   margin-left: 10%; 
   width: 80%;
   height: 400rpx;
@@ -15,14 +17,18 @@
   border-radius: 20rpx;
   opacity: 0.9
 }
+.rate{
+  margin-top: 10%;
+ padding-left:32%;
+}
 .input{
    height: 100%;
    width: 100%;
 }
 .ok{
-  position: fixed;
-  left: 25%;
-  top:500rpx;
+  margin-right: 25%;
+  margin-left: 25%;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   border-radius: 50rpx;

@@ -3,6 +3,12 @@
       "backgroundColor": "#0094ff",
       "navigationBarBackgroundColor": "#0094ff",
       "navigationBarTitleText": "选词",
-      "navigationBarTextStyle": "white"
-
+      "navigationBarTextStyle": "white",
+      "usingComponents": {
+            "van-button": "../../dist/vant/button/index",
+            "van-progress": "../../dist/vant/progress/index",
+            "van-tabbar": "../../dist/vant/tabbar/index",
+            "van-tabbar-item": "../../dist/vant/tabbar-item/index",
+            "van-search": "../../dist/vant/search/index"
+      }
 }

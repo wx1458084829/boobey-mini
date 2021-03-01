@@ -1,0 +1,153 @@
+<!--pages/pk/pk.wxml-->
+<!-- 匹配界面 -->
+<view class='pk_bg' wx:if="{{ui1}}">
+	<view class="container">
+		<view class='progress_box'>
+			<canvas class="progress_bg" canvas-id="canvasProgressbg"> </canvas>
+			<canvas class="progress_canvas" canvas-id="canvasProgress"> </canvas>
+			<view class="progress_text">
+				<view class="progress_dot"></view>
+				<text class='progress_info' bindtap = "sendPlayerInfo"> {{progress_txt}}</text>
+			</view>
+		</view>
+	</view>
+</view>
+
+<!--匹配转到对战界面   啥子东西哦，tm根本不出来！！！-->
+<!-- 2.对战动画 -->
+
+<van-transition
+ show="{{ show }}"
+ name="slide-right"
+ duration="{{ {enter:2000, leave: 20} }}"
+ custom-class="me_block"
+>
+	<van-image
+	 width="50px"
+	 height="50px"
+	 src="{{player2.avatarUrl}}"
+	 image-class="me_img"
+	/>
+</van-transition>
+<van-transition
+ show="{{ show }}"
+ name="slide-left"
+ duration="{{ {enter:2000, leave: 20} }}"
+ custom-class="enemy_block"
+>
+	<van-image
+	 width="50px"
+	 height="50px"
+	 src="{{player1.avatarUrl}}"
+	 image-class="enemy_img"
+	/>
+</van-transition>
+
+<!-- 3. 对战界面 -->
+<view class='pk_head' wx:if="{{ui3}}">
+
+	<view class='me' bindtap="getUserInfo">
+		<view class='me_grade'>{{player1.score}}</view>
+		<image
+		 class='user_pic1'
+		 background-size="cover"
+		 src='{{player1.avatarUrl}}'
+		></image>
+	</view>
+
+	<view class='enemy'>
+		<image
+		 class='user_pic2'
+		 background-size="cover"
+		 src='{{player2.avatarUrl}}'
+		></image>
+		<view class='enemy_grade'>{{player2.score}}</view>
+
+	</view>
+	<view class='pk_circle'>
+		<van-circle
+		 value="{{ value }}"
+		 color="{{ gradientColor }}"
+		 
+		 size="100"
+		/>
+	</view>
+	<view class='pk_body'>
+		<view class='pk_cell'>
+			<view class='pk_num'>第{{problem_do_num}}题</view>
+			<view class='pk_word'>{{problem.subject}}</view>
+			<view
+			 class='pk_choice'
+			 id="1"
+			 bindtap="choose"
+			> {{problem.choiceA}}
+			</view>
+			<view
+			 class='pk_choice'
+			 id="2"
+			 bindtap="choose"
+			> {{problem.choiceB}}
+			</view>
+			<view
+			 class='pk_choice'
+			 id="3"
+			 bindtap="choose"
+			> {{problem.choiceC}}
+			</view>
+			<view
+			 class='pk_choice'
+			 id="4"
+			 bindtap="choose"
+			> {{problem.choiceD}}
+			</view>
+		</view>
+	</view>
+</view>
+<!-- 结算头部 -->
+<!-- <view class="w_head" wx:if="{{ui4}}">
+	<view class="me_name">{{result.player1.nickName}}
+		<view class="me_df">{{result.player1.score}}
+
+		</view>
+	</view>
+	<view class="enemy_name">{{result.player2.nickName}}
+		<view class="enemy_df">{{result.player2.score}}
+		</view>
+	</view>
+	<view class="w_vs">vs</view>
+</view> -->
+<!--胜利的Body部分-->
+<view class="w_body" wx:if="{{iswin&&ui4}}">
+	<view class="w_k">
+		<view class="w_word">胜利</view>
+		<image class="w_t" src="{{result.player1.avatarUrl}}"></image>
+	</view>
+	<view class="w_b1"> Good</view>
+	<view class="w_b2"> 太棒了，你战胜了对手</view>
+	<button
+	 open-type="share"
+	 class="cancle_botton"
+	 bindtap="share"
+	>
+		<view class="look_me">好友分享</view>
+	</button>
+</view>
+<!--失败的Body部分-->
+<view class="l_body" wx:if="{{!iswin&&ui4}}">
+	<view class="l_k">
+		<view class="l_word">失败</view>
+		<image class="l_t" src="{{result.player1.avatarUrl}}"></image>
+	</view>
+	<view class="l_b1"> Sorry</view>
+	<view class="l_b2"> 很遗憾,你输了</view>
+	
+	<button
+	 open-type="share"
+	 class="cancle_botton"
+	 bindtap="share"
+	>
+		<view class="look_me">好友分享</view>
+	</button>
+</view>
+<van-toast id="van-toast" />
+

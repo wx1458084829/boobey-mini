@@ -1,7 +1,7 @@
+//六级词汇
 var word_list = [
   'initially',
   'makeup',
-
   'rmost',
   'optimum',
   'block',
@@ -12,7 +12,6 @@ var word_list = [
   'dignity',
   'grunt',
   'abide',
-
   'composer',
   'slave',
 

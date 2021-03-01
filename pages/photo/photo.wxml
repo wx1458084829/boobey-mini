@@ -1,0 +1,14 @@
+<!--pages/cropper/cropper-sample.wxml-->
+<view class='body' wx:if="{{show}}">
+
+	<!-- 裁剪组件 -->
+	<cropper id='cropper' class='stage'></cropper>
+
+	<!-- 取消 和 确认 按钮，并绑定事件 -->
+	<view class='bar'>
+		<view class='btn btn-cancel' bindtap='fnCancel'>取消</view>
+		<view class='btn btn-submit' bindtap='fnSubmit'>确定</view>
+	</view>
+
+</view>
+

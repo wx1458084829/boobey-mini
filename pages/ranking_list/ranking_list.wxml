@@ -1,0 +1,304 @@
+<!--pages/ranking_list/ranking_list.wxml-->
+
+<view class="rank_head">
+<van-tabs   color="#6495ED">
+<view class="head1">
+  <van-tab title="四级排行" tab-class="tab_class" title-style="backgroud-color:#6495ED;">
+     <view class="player">
+         <view class='xuhao'>
+               1
+         </view>
+        <image class='user_img"' background-size="cover" src='https://wx.qlogo.cn/mmopen/vi_32/LoaI3d6sI2AhaxwibUcBB5ic4yn9zcEPmRQN7Qj2iam31hicGWVkgwTKaDiaCaWiceln5w0kDVMuNFZb9gNI84LIeAGQ/132'></image> 
+      <view class='user_detail' > 
+     <view style='font-size: 13px; font-weight:500;text-align:center;height:30px;'>小明</view>
+     <text style='font-size: 10px; color:#008000 ; text-align:center;height:20px;'>璀璨王者</text>
+     </view>
+     <view class="fenshu ">2198 分</view>
+     <view class="dizhi">广东 佛山<view>
+     </view>
+      </view>
+      </view>
+      <view class="player">
+         <view class='xuhao'>
+              2
+         </view>
+        <image class='user_img"' background-size="cover" src='https://wx.qlogo.cn/mmopen/vi_32/LoaI3d6sI2AhaxwibUcBB5ic4yn9zcEPmRQN7Qj2iam31hicGWVkgwTKaDiaCaWiceln5w0kDVMuNFZb9gNI84LIeAGQ/132'></image> 
+      <view class='user_detail' > 
+     <view style='font-size: 13px; font-weight:500;text-align:center;height:30px;'>小明</view>
+     <text style='font-size: 10px; color:#008000 ; text-align:center;height:20px;'>璀璨王者</text>
+     </view>
+     <view class="fenshu ">2198 分</view>
+     <view class="dizhi">广东 佛山<view>
+     </view>
+      </view>
+      </view>
+      <view class="player">
+         <view class='xuhao'>
+               3
+         </view>
+        <image class='user_img"' background-size="cover" src='https://wx.qlogo.cn/mmopen/vi_32/LoaI3d6sI2AhaxwibUcBB5ic4yn9zcEPmRQN7Qj2iam31hicGWVkgwTKaDiaCaWiceln5w0kDVMuNFZb9gNI84LIeAGQ/132'></image> 
+      <view class='user_detail' > 
+     <view style='font-size: 13px; font-weight:500;text-align:center;height:30px;'>小明</view>
+     <text style='font-size: 10px; color:#008000 ; text-align:center;height:20px;'>璀璨王者</text>
+     </view>
+     <view class="fenshu ">2198 分</view>
+     <view class="dizhi">广东 佛山<view>
+     </view>
+      </view>
+      </view>
+      <view class="player">
+         <view class='xuhao'>
+               4
+         </view>
+        <image class='user_img"' background-size="cover" src='https://wx.qlogo.cn/mmopen/vi_32/LoaI3d6sI2AhaxwibUcBB5ic4yn9zcEPmRQN7Qj2iam31hicGWVkgwTKaDiaCaWiceln5w0kDVMuNFZb9gNI84LIeAGQ/132'></image> 
+      <view class='user_detail' > 
+     <view style='font-size: 13px; font-weight:500;text-align:center;height:30px;'>小明</view>
+     <text style='font-size: 10px; color:#008000 ; text-align:center;height:20px;'>璀璨王者</text>
+     </view>
+     <view class="fenshu ">2198 分</view>
+     <view class="dizhi">广东 佛山<view>
+     </view>
+      </view>
+      </view>
+      <view class="player">
+         <view class='xuhao'>
+               5
+         </view>
+        <image class='user_img"' background-size="cover" src='https://wx.qlogo.cn/mmopen/vi_32/LoaI3d6sI2AhaxwibUcBB5ic4yn9zcEPmRQN7Qj2iam31hicGWVkgwTKaDiaCaWiceln5w0kDVMuNFZb9gNI84LIeAGQ/132'></image> 
+      <view class='user_detail' > 
+     <view style='font-size: 13px; font-weight:500;text-align:center;height:30px;'>小明</view>
+     <text style='font-size: 10px; color:#008000 ; text-align:center;height:20px;'>璀璨王者</text>
+     </view>
+     <view class="fenshu ">2198 分</view>
+     <view class="dizhi">广东 佛山<view>
+     </view>
+      </view>
+      </view>
+  
+  </van-tab>
+  <van-tab title="六级排行">
+  <view class="class1">
+   <view class="player">
+         <view class='xuhao'>
+               1
+         </view>
+        <image class='user_img"' background-size="cover" src='https://wx.qlogo.cn/mmopen/vi_32/LoaI3d6sI2AhaxwibUcBB5ic4yn9zcEPmRQN7Qj2iam31hicGWVkgwTKaDiaCaWiceln5w0kDVMuNFZb9gNI84LIeAGQ/132'></image> 
+      <view class='user_detail' > 
+     <view style='font-size: 13px; font-weight:500;text-align:center;height:30px;'>小明</view>
+     <text style='font-size: 10px; color:#008000 ; text-align:center;height:20px;'>璀璨王者</text>
+     </view>
+     <view class="fenshu ">2198 分</view>
+     <view class="dizhi">广东 佛山<view>
+     </view>
+      </view>
+      </view>
+      <view class="player">
+         <view class='xuhao'>
+              2
+         </view>
+        <image class='user_img"' background-size="cover" src='https://wx.qlogo.cn/mmopen/vi_32/LoaI3d6sI2AhaxwibUcBB5ic4yn9zcEPmRQN7Qj2iam31hicGWVkgwTKaDiaCaWiceln5w0kDVMuNFZb9gNI84LIeAGQ/132'></image> 
+      <view class='user_detail' > 
+     <view style='font-size: 13px; font-weight:500;text-align:center;height:30px;'>小明</view>
+     <text style='font-size: 10px; color:#008000 ; text-align:center;height:20px;'>璀璨王者</text>
+     </view>
+     <view class="fenshu ">2198 分</view>
+     <view class="dizhi">广东 佛山<view>
+     </view>
+      </view>
+      </view>
+      <view class="player">
+         <view class='xuhao'>
+               3
+         </view>
+        <image class='user_img"' background-size="cover" src='https://wx.qlogo.cn/mmopen/vi_32/LoaI3d6sI2AhaxwibUcBB5ic4yn9zcEPmRQN7Qj2iam31hicGWVkgwTKaDiaCaWiceln5w0kDVMuNFZb9gNI84LIeAGQ/132'></image> 
+      <view class='user_detail' > 
+     <view style='font-size: 13px; font-weight:500;text-align:center;height:30px;'>王鑫</view>
+     <text style='font-size: 10px; color:#008000 ; text-align:center;height:20px;'>璀璨王者</text>
+     </view>
+     <view class="fenshu ">2198 分</view>
+     <view class="dizhi">广东 佛山<view>
+     </view>
+      </view>
+      </view>
+      <view class="player">
+         <view class='xuhao'>
+               4
+         </view>
+        <image class='user_img"' background-size="cover" src='https://wx.qlogo.cn/mmopen/vi_32/LoaI3d6sI2AhaxwibUcBB5ic4yn9zcEPmRQN7Qj2iam31hicGWVkgwTKaDiaCaWiceln5w0kDVMuNFZb9gNI84LIeAGQ/132'></image> 
+      <view class='user_detail' > 
+     <view style='font-size: 13px; font-weight:500;text-align:center;height:30px;'>王鑫</view>
+     <text style='font-size: 10px; color:#008000 ; text-align:center;height:20px;'>璀璨王者</text>
+     </view>
+     <view class="fenshu ">2198 分</view>
+     <view class="dizhi">广东 佛山<view>
+     </view>
+      </view>
+      </view>
+      <view class="player">
+         <view class='xuhao'>
+               5
+         </view>
+        <image class='user_img"' background-size="cover" src='https://wx.qlogo.cn/mmopen/vi_32/LoaI3d6sI2AhaxwibUcBB5ic4yn9zcEPmRQN7Qj2iam31hicGWVkgwTKaDiaCaWiceln5w0kDVMuNFZb9gNI84LIeAGQ/132'></image> 
+      <view class='user_detail' > 
+     <view style='font-size: 13px; font-weight:500;text-align:center;height:30px;'>王鑫</view>
+     <text style='font-size: 10px; color:#008000 ; text-align:center;height:20px;'>璀璨王者</text>
+     </view>
+     <view class="fenshu ">2198 分</view>
+     <view class="dizhi">广东 佛山<view>
+     </view>
+      </view>
+      </view>
+  </view>
+  </van-tab>
+  <van-tab title="专四排行">
+  <view class="class1">
+   <view class="player">
+         <view class='xuhao'>
+               1
+         </view>
+        <image class='user_img"' background-size="cover" src='https://wx.qlogo.cn/mmopen/vi_32/LoaI3d6sI2AhaxwibUcBB5ic4yn9zcEPmRQN7Qj2iam31hicGWVkgwTKaDiaCaWiceln5w0kDVMuNFZb9gNI84LIeAGQ/132'></image> 
+      <view class='user_detail' > 
+     <view style='font-size: 13px; font-weight:500;text-align:center;height:30px;'>王鑫</view>
+     <text style='font-size: 10px; color:#008000 ; text-align:center;height:20px;'>璀璨王者</text>
+     </view>
+     <view class="fenshu ">2198 分</view>
+     <view class="dizhi">广东 佛山<view>
+     </view>
+      </view>
+      </view>
+      <view class="player">
+         <view class='xuhao'>
+              2
+         </view>
+        <image class='user_img"' background-size="cover" src='https://wx.qlogo.cn/mmopen/vi_32/LoaI3d6sI2AhaxwibUcBB5ic4yn9zcEPmRQN7Qj2iam31hicGWVkgwTKaDiaCaWiceln5w0kDVMuNFZb9gNI84LIeAGQ/132'></image> 
+      <view class='user_detail' > 
+     <view style='font-size: 13px; font-weight:500;text-align:center;height:30px;'>王鑫</view>
+     <text style='font-size: 10px; color:#008000 ; text-align:center;height:20px;'>璀璨王者</text>
+     </view>
+     <view class="fenshu ">2198 分</view>
+     <view class="dizhi">广东 佛山<view>
+     </view>
+      </view>
+      </view>
+      <view class="player">
+         <view class='xuhao'>
+               3
+         </view>
+        <image class='user_img"' background-size="cover" src='https://wx.qlogo.cn/mmopen/vi_32/LoaI3d6sI2AhaxwibUcBB5ic4yn9zcEPmRQN7Qj2iam31hicGWVkgwTKaDiaCaWiceln5w0kDVMuNFZb9gNI84LIeAGQ/132'></image> 
+      <view class='user_detail' > 
+     <view style='font-size: 13px; font-weight:500;text-align:center;height:30px;'>王鑫</view>
+     <text style='font-size: 10px; color:#008000 ; text-align:center;height:20px;'>璀璨王者</text>
+     </view>
+     <view class="fenshu ">2198 分</view>
+     <view class="dizhi">广东 佛山<view>
+     </view>
+      </view>
+      </view>
+      <view class="player">
+         <view class='xuhao'>
+               4
+         </view>
+        <image class='user_img"' background-size="cover" src='https://wx.qlogo.cn/mmopen/vi_32/LoaI3d6sI2AhaxwibUcBB5ic4yn9zcEPmRQN7Qj2iam31hicGWVkgwTKaDiaCaWiceln5w0kDVMuNFZb9gNI84LIeAGQ/132'></image> 
+      <view class='user_detail' > 
+     <view style='font-size: 13px; font-weight:500;text-align:center;height:30px;'>王鑫</view>
+     <text style='font-size: 10px; color:#008000 ; text-align:center;height:20px;'>璀璨王者</text>
+     </view>
+     <view class="fenshu ">2198 分</view>
+     <view class="dizhi">广东 佛山<view>
+     </view>
+      </view>
+      </view>
+      <view class="player">
+         <view class='xuhao'>
+               5
+         </view>
+        <image class='user_img"' background-size="cover" src='https://wx.qlogo.cn/mmopen/vi_32/LoaI3d6sI2AhaxwibUcBB5ic4yn9zcEPmRQN7Qj2iam31hicGWVkgwTKaDiaCaWiceln5w0kDVMuNFZb9gNI84LIeAGQ/132'></image> 
+      <view class='user_detail' > 
+     <view style='font-size: 13px; font-weight:500;text-align:center;height:30px;'>王鑫</view>
+     <text style='font-size: 10px; color:#008000 ; text-align:center;height:20px;'>璀璨王者</text>
+     </view>
+     <view class="fenshu ">2198 分</view>
+     <view class="dizhi">广东 佛山<view>
+     </view>
+      </view>
+      </view>
+     </view> 
+  </van-tab>
+  
+   <van-tab title="专八排行">
+  <view class="class1">
+   <view class="player">
+         <view class='xuhao'>
+               1
+         </view>
+        <image class='user_img"' background-size="cover" src='https://wx.qlogo.cn/mmopen/vi_32/LoaI3d6sI2AhaxwibUcBB5ic4yn9zcEPmRQN7Qj2iam31hicGWVkgwTKaDiaCaWiceln5w0kDVMuNFZb9gNI84LIeAGQ/132'></image> 
+      <view class='user_detail' > 
+     <view style='font-size: 13px; font-weight:500;text-align:center;height:30px;'>王鑫</view>
+     <text style='font-size: 10px; color:#008000 ; text-align:center;height:20px;'>璀璨王者</text>
+     </view>
+     <view class="fenshu ">2198 分</view>
+     <view class="dizhi">广东 佛山<view>
+     </view>
+      </view>
+      </view>
+      <view class="player">
+         <view class='xuhao'>
+              2
+         </view>
+        <image class='user_img"' background-size="cover" src='https://wx.qlogo.cn/mmopen/vi_32/LoaI3d6sI2AhaxwibUcBB5ic4yn9zcEPmRQN7Qj2iam31hicGWVkgwTKaDiaCaWiceln5w0kDVMuNFZb9gNI84LIeAGQ/132'></image> 
+      <view class='user_detail' > 
+     <view style='font-size: 13px; font-weight:500;text-align:center;height:30px;'>王鑫</view>
+     <text style='font-size: 10px; color:#008000 ; text-align:center;height:20px;'>璀璨王者</text>
+     </view>
+     <view class="fenshu ">2198 分</view>
+     <view class="dizhi">广东 佛山<view>
+     </view>
+      </view>
+      </view>
+      <view class="player">
+         <view class='xuhao'>
+               3
+         </view>
+        <image class='user_img"' background-size="cover" src='https://wx.qlogo.cn/mmopen/vi_32/LoaI3d6sI2AhaxwibUcBB5ic4yn9zcEPmRQN7Qj2iam31hicGWVkgwTKaDiaCaWiceln5w0kDVMuNFZb9gNI84LIeAGQ/132'></image> 
+      <view class='user_detail' > 
+     <view style='font-size: 13px; font-weight:500;text-align:center;height:30px;'>王鑫</view>
+     <text style='font-size: 10px; color:#008000 ; text-align:center;height:20px;'>璀璨王者</text>
+     </view>
+     <view class="fenshu ">2198 分</view>
+     <view class="dizhi">广东 佛山<view>
+     </view>
+      </view>
+      </view>
+      <view class="player">
+         <view class='xuhao'>
+               4
+         </view>
+        <image class='user_img"' background-size="cover" src='https://wx.qlogo.cn/mmopen/vi_32/LoaI3d6sI2AhaxwibUcBB5ic4yn9zcEPmRQN7Qj2iam31hicGWVkgwTKaDiaCaWiceln5w0kDVMuNFZb9gNI84LIeAGQ/132'></image> 
+      <view class='user_detail' > 
+     <view style='font-size: 13px; font-weight:500;text-align:center;height:30px;'>王鑫</view>
+     <text style='font-size: 10px; color:#008000 ; text-align:center;height:20px;'>璀璨王者</text>
+     </view>
+     <view class="fenshu ">2198 分</view>
+     <view class="dizhi">广东 佛山<view>
+     </view>
+      </view>
+      </view>
+      <view class="player">
+         <view class='xuhao'>
+               5
+         </view>
+        <image class='user_img"' background-size="cover" src='https://wx.qlogo.cn/mmopen/vi_32/LoaI3d6sI2AhaxwibUcBB5ic4yn9zcEPmRQN7Qj2iam31hicGWVkgwTKaDiaCaWiceln5w0kDVMuNFZb9gNI84LIeAGQ/132'></image> 
+      <view class='user_detail' > 
+     <view style='font-size: 13px; font-weight:500;text-align:center;height:30px;'>王鑫</view>
+     <text style='font-size: 10px; color:#008000 ; text-align:center;height:20px;'>璀璨王者</text>
+     </view>
+     <view class="fenshu ">2198 分</view>
+     <view class="dizhi">广东 佛山<view>
+     </view>
+      </view>
+      </view>
+  </view>
+   </van-tab>
+   </view>
+</van-tabs>
+</view>

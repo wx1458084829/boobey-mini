@@ -1,0 +1,17 @@
+<!--如果是句子-->
+<view class="simple_look1">
+	<view class="en_k">
+		<view>
+			<view  style="width:90%;font-size: 25px;font-family: Songti TC;word-break:break-all;margin-left:5%;margin-right:5%">{{translation_a}}
+			</view>
+		</view>
+	</view>
+	<view class="tran_re">翻译结果：</view>
+	<view class="ch_k">
+		<view>
+			<view  style="width:90%;font-size: 25px;font-family: Songti TC;word-break:break-all;margin-left:5%;margin-right:5%">{{translation_b}}
+			</view>
+		</view>
+	</view>
+</view>
+

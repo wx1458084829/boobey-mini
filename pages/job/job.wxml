@@ -7,14 +7,7 @@
   </view>
 </view>
 
-<!-->
-<view wx:if="{{!(have_done)}}" class="have_done">
-    <view class="first_notice">那么现在，开始我们的单词之旅</view>
-    <view class="start_botton" bindtap="choice">
-       <view class="look_me">点我</view>
-    </view>
-</view>
--->
+
 <view class="word_num">
    <view class="new_word_num">{{today_new_num}}
      <view style="font-size:25rpx; ">今日新词</view>
@@ -92,3 +85,9 @@
 
 </view>
 
+<van-tabbar active="{{ active }}" bind:change="onChange">
+  <van-tabbar-item icon="home-o">学习</van-tabbar-item>
+  <van-tabbar-item icon="search">搜索</van-tabbar-item>
+  <van-tabbar-item icon="friends-o">对战</van-tabbar-item>
+  <van-tabbar-item icon="setting-o">我的</van-tabbar-item>
+</van-tabbar>

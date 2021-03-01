@@ -1,7 +1,20 @@
+
 {
-  "backgroundTextStyle": "dark",
-  "backgroundColor": "#0094ff",
-  "navigationBarBackgroundColor": "#0094ff",
+  "backgroundColor": "#ffffff",
+  "navigationBarBackgroundColor": "#a4d8fa",
   "navigationBarTitleText": "BooBey单词",
-  "navigationBarTextStyle": "black"
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "van-button": "../../dist/vant/button/index",
+    "van-progress": "../../dist/vant/progress/index",
+    "van-tabbar": "../../dist/vant/tabbar/index",
+    "van-tabbar-item": "../../dist/vant/tabbar-item/index",
+    "van-overlay": "../../dist/vant/overlay/index",
+    "van-radio": "../../dist/vant/radio/index",
+    "van-radio-group": "../../dist/vant/radio-group/index"
+  },
+  
+  "disableScroll": true,
+  "backgroundTextStyle": "light"
 }
+

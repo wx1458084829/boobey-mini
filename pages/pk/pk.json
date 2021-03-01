@@ -1,0 +1,17 @@
+{
+  "usingComponents": { 
+    "van-circle": "../../dist/vant/circle/index",
+    "van-transition": "../../dist/vant/transition/index",
+    "van-popup": "../../dist/vant/popup/index",
+    "van-progress": "../../dist/vant/progress/index",
+    "van-image": "../../dist/vant/image/index" ,
+    "van-toast": "../../dist/vant/toast/index"
+    
+  },
+  "backgroundTextStyle": "light",
+  "backgroundColor": "#ffffff",
+  "navigationBarBackgroundColor": "#a4d8fa",
+  "navigationBarTitleText": "排位赛",
+  "navigationBarTextStyle": "white"
+  
+}

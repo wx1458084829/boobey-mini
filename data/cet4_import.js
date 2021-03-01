@@ -1,3 +1,4 @@
+//四级核心
 var word_list = 
 ['alter',
   'burst',

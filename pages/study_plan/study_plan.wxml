@@ -1,0 +1,47 @@
+<!--pages/study_plan/study_plan.wxml-->
+<van-dialog
+ id="van-dialog"
+ bind:confirm="onSelect"
+ bind:cancel="onClose"
+/>
+
+	<view class=" welcome" wx:if="{{first}}">欢迎使用BooBey单词</view>
+<view class="ch_choice">
+	<view class="ch_zt">
+		请选择您的词汇:{{dic_name}}
+	</view>
+
+</view>
+
+<view class="all_choice">
+	<view class="f_line">
+		<view class="f_l">
+			<view
+			 id='cet4'
+			 name='四级词汇'
+			 bindtap='ontap'
+			>四级词汇
+			</view>
+		</view>
+		<view class="f_r">
+			<view id='cet4_import' bindtap='ontap'>四级核心</view>
+		</view>
+	</view>
+	<view class="f_line">
+		<view class="s_l">
+			<view id='cet6' bindtap='ontap'>六级词汇</view>
+		</view>
+		<view class="s_r">
+			<view id='cet6_import' bindtap='ontap'>六级核心</view>
+		</view>
+	</view>
+	<view class="f_line">
+		<view class="t_l">
+			<view id='kaoyan' bindtap='ontap'>考研词汇</view>
+		</view>
+		<view class="t_r">
+			<view id='kaoyan_import' bindtap='ontap'>考研核心</view>
+		</view>
+	</view>
+</view>
+

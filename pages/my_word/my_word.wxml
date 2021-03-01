@@ -1,20 +1,57 @@
-
-
-<template name="collect">
+<!-- <template name="collect">
    <view class="simple_look">
-   <image bindtap="read"  style="margin: auto; width: 25px; padding-right:5px;height: 25px; background-color: #fff;" mode="scaleToFill" src="../../images/ji.png"></image>
-
+   <image bindtap="read"  style="margin: auto; width: 25px; padding-right:5px;height: 25px; background-color: #fff;" mode="scaleToFill" src="../../images/yuying.png"></image>
+ 
    <view class='sim_word'>{{item.word}}</view>
    <view class='quan'>权重:{{item.ease}}</view>
    <view class='day_num'>{{item.day}}天前</view>
    </view>
 </template>
+-->
+<view class="pages">
 
-<view  class="pages">
-
-    <block wx:for="{{list}}">
-         <template is="collect" data="{{item}}"/>
-    </block>
+	<block wx:for="{{save_word}}">
+		<template is="collect" data="{{item}}" />
+	</block>
 
 </view>
+<template name="collect">
+	<van-swipe-cell
+	 id="swipe-cell"
+	 right-width="{{ 65 }}"
+	 async-close
+	 bind:close="onClose"
+	>
+		<van-cell-group>
+			<van-cell
+			 id="{{item.word}}"
+			 title=""
+			 value=""
+			 bindtouchstart="cell_click"
+			 bindtap="navigate_word"
+			>
+				<view class="all">
+					<image
+					 bindtap="read"
+					 style="margin: auto; width: 25px; padding-right:5px;height: 25px; background-color: #fff;"
+					 mode="scaleToFill"
+					 src="https://s1.ax1x.com/2020/06/12/tOhfRH.png"
+					></image>
+					<view class="sim_word">
+						{{item.word}}
+					</view>
+					<view class="day_num">
+						{{item.data}}
+					</view>
+				</view>
+			</van-cell>
+		</van-cell-group>
+		<view slot="right">删除</view>
+	</van-swipe-cell>
+</template>
+<van-dialog
+ id="van-dialog"
+ bind:confirm="confirmDel"
+ bind:cancel="cancelDel"
+/>
 

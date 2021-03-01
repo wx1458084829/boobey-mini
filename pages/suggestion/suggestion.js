@@ -69,7 +69,7 @@ Page({
   },
   ok(){
     console.log(this.data.voteTitle)
-    console.log(wx.getStorageSync("userInfo").nickName)
+    console.log(wx.getStorageSync("openid").nickName)
     wx.showToast({ title: '提交成功' })
   }
 })

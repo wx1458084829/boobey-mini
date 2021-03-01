@@ -1,0 +1,208 @@
+/* pages/study_plan/study_plan.wxss */
+.ch_choice{
+  height: 133px;
+  margin: 2%;
+  margin-top: 2%;
+  scroll-padding-left: 1%;
+  border-radius: 10px;
+   width: 96%;
+   display: flex;
+   flex-direction: row;
+   background-color:white;
+   border-top: 7px solid rgb(255, 255, 255);
+   justify-content: space-around;
+   font-weight: 400;
+   color: #515151;
+}
+.all_choice{
+   height: 450px;
+  margin-top: 3%;
+  background-color: #ffffff;
+  margin-left: 2%;
+  margin-right: 2%;
+  border-radius: 10px;
+}
+.choice_content{
+  left:2px;
+  right:2px;
+  display: flex;
+ 
+  
+}
+.l{
+ 
+  margin-left: 25%;
+  
+}
+.r{
+ 
+  margin-left: 30%;
+
+}
+.f_line{
+  
+  
+}
+.f_l{
+  /* border: 2px solid #fff; */
+  width: 120px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-top: 50px; 
+  margin-left:20px;
+  float:left;
+  padding-top: 15px;
+  box-shadow: 0rpx 10rpx 50rpx 10rpx rgba(85, 85, 85, 0.3);
+  /* box-shadow: 10rpx 10rpx 5rpx 1rpx rgba(255, 168, 64 ); */
+  border-left:1px solid rgba(255, 168, 64 );
+  border-width: 10px;
+}
+.f_r{
+  
+  margin-right: 20px;
+  width: 120px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: 50px;
+  margin-bottom: auto; 
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding-top: 15px;
+ margin-left:20px;
+ float:right;
+ border-right:1px solid rgba(0,255,0);
+ box-shadow: 0rpx 10rpx 50rpx 10rpx rgba(85, 85, 85, 0.3);
+ border-width: 10px;
+ /* box-shadow: 0rpx 10rpx 50rpx 10rpx rgba(85, 85, 85, 0.10); */
+}
+.s_l{
+  /* border: 2px solid #fff; */
+  width: 120px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-top: 30px; 
+  margin-left:20px;
+  float:left;
+  padding-top: 15px;
+  border-left:1px solid rgb(255, 81, 0);
+  box-shadow: 0rpx 10rpx 50rpx 10rpx rgba(85, 85, 85, 0.3);
+  border-width: 10px;
+}
+.s_r{
+  /* border: 0.01px solid #fff; */
+  margin-right: 20px;
+  width: 120px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-bottom: auto; 
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding-top: 15px;
+ margin-left:20px;
+ float:right;
+ border-right:1px solid rgba(164,216,250);
+ box-shadow: 0rpx 10rpx 50rpx 10rpx rgba(85, 85, 85, 0.3);
+ border-width: 10px;
+ /* box-shadow: 0rpx 10rpx 50rpx 10rpx rgba(85, 85, 85, 0.10); */
+}
+.t_l{
+  /* border: 2px solid #fff; */
+  width: 120px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-top: 30px; 
+  margin-left:20px;
+  float:left;
+  padding-top: 15px;
+  border-left:1px solid rgba(191, 4, 254);
+  box-shadow: 0rpx 10rpx 50rpx 10rpx rgba(85, 85, 85, 0.3);
+  border-width: 10px;
+}
+.t_r{
+  /* border: 0.01px solid #fff; */
+  margin-right: 20px;
+  width: 120px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-bottom: auto; 
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding-top: 15px;
+ margin-left:20px;
+ float:right;
+ border-right:1px solid rgba(255, 13, 227);
+ box-shadow: 0rpx 10rpx 50rpx 10rpx rgba(85, 85, 85, 0.3);
+ border-width: 10px;
+ /* box-shadow: 0rpx 10rpx 50rpx 10rpx rgba(85, 85, 85, 0.10); */
+}
+.l_l{
+  /* border: 2px solid #fff; */
+  width: 120px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-top: 30px; 
+  margin-left:20px;
+  float:left;
+  padding-top: 15px;
+  border-left:1px solid rgb(243, 247, 7);
+  box-shadow: 0rpx 10rpx 50rpx 10rpx rgba(85, 85, 85, 0.3);
+  border-width: 10px;
+}
+.l_r{
+  /* border: 0.01px solid #fff; */
+  margin-right: 20px;
+  width: 120px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-bottom: auto; 
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding-top: 15px;
+ margin-left:20px;
+ float:right;
+ border-right:1px solid rgb(7, 42, 237);
+ box-shadow: 0rpx 10rpx 50rpx 10rpx rgba(85, 85, 85, 0.3);
+ border-width: 10px;
+ /* box-shadow: 0rpx 10rpx 50rpx 10rpx rgba(85, 85, 85, 0.10); */
+}
+.ch_zt{
+  width: 100%;
+   font-size: 50rpx;
+   text-align:left;
+   padding-top: 17%;
+   padding-left: 2%;
+  
+}
+.welcome{
+  width: 90%;
+  height: 30px;
+  text-align: center;
+  padding-right: 5%;
+  padding-left: 5%;
+ padding-top: 2%;
+ font-weight: 200;
+ font-size: 25px;
+ color: darkgrey;
+ border-radius: 10px;
+
+  
+}

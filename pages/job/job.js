@@ -4,6 +4,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    active : 2,
     time: "",
     slist: 0,
     choice: false,
@@ -21,7 +22,33 @@ Page({
     today_had_choice: 0,
     day_num: 0
   },
-
+  onChange(event) {
+    // event.detail 的值为当前选中项的索引
+   // this.setData({ active: event.detail });
+    switch( event.detail){
+      case 0:
+        wx.switchTab({
+          url: '../study/study'
+        }) 
+       break
+       case 1:
+        wx.switchTab({
+          url: '../search/search'
+        }) 
+       break
+       case 2:
+        wx.switchTab({
+          url: '../job/job'
+        })   
+        break
+        case 3:
+        wx.switchTab({
+          url: '../me/me'
+        })   
+        break
+    }
+    //console.log(event.detail)
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -41,41 +68,6 @@ Page({
       day_num: wx.getStorageSync('day_num')
     })
 
-    /*
-    if (time=== wx.getStorageSync('day')){
-    
-    }
-    else {
-      wx.setStorage({
-        key: "day",
-        data: time
-      })
-      
-      if (wx.getStorageSync('have_done')){
-        var num = wx.getStorageSync('word_num')
-        var day_task = wx.getStorageSync('day_task')
-        var task = wx.getStorageSync("task")
-        var length = task.length
-       if(length<day_task){
-         for (var i = num; i <= num + (day_task - length) - 1; i++) {
-           task.push(i)
-         }
-         wx.setStorage({
-           key: "task",
-           data: task
-         })
-         wx.setStorage({
-           key: "word_num",
-           data: num + day_task - length
-         })
-       }
-      
-      }
-
-
-    }
-
-    */
     this.setData({
       day_num: wx.getStorageSync('day_num'),
       lest_word: wx.getStorageSync(this.data.time),

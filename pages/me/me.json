@@ -1,8 +1,23 @@
 {
       "backgroundTextStyle": "light",
-      "backgroundColor": "#1E90FF",
-      "navigationBarBackgroundColor": "#1E90FF",
+      "backgroundColor": "#ffffff",
+      "navigationBarBackgroundColor": "#a4d8fa",
       "navigationBarTitleText": "我的",
-      "navigationBarTextStyle": "white"
-
+      "navigationBarTextStyle": "white",
+      "usingComponents": {
+            "van-cell": "../../dist/vant/cell/index",
+            "van-cell-group": "../../dist/vant/cell-group/index",
+            "van-icon": "../../dist/vant/icon/index",
+            "van-grid": "../../dist/vant/grid/index",
+            "van-grid-item": "../../dist/vant/grid-item/index",
+            "van-progress": "../../dist/vant/progress/index",
+            "van-tabbar": "../../dist/vant/tabbar/index",
+            "van-tabbar-item": "../../dist/vant/tabbar-item/index",
+            "van-search": "../../dist/vant/search/index",
+            "van-picker": "../../dist/vant/picker/index",
+            "van-popup": "../../dist/vant/popup/index",
+            "van-toast": "../../dist/vant/toast/index",
+            "van-button": "../../dist/vant/button/index"
 }
+          }
+     

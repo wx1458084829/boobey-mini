@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "van-tab": "../../dist/vant/tab/index",
+  "van-tabs": "../../dist/vant/tabs/index"
+  },
+  
+  "backgroundTextStyle": "light",
+  "backgroundColor": "#ffffff",
+  "navigationBarBackgroundColor": "#a4d8fa",
+  "navigationBarTitleText": "排行榜",
+  "navigationBarTextStyle": "white"
+}
