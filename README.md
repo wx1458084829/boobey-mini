@@ -1,1 +1,1 @@
-https://gitee.com/wx1458084829/boobey.git
+https://github.com/wx1458084829/boobey-mini
