@@ -38,7 +38,7 @@ Page({
   loadnext:function(){
     var that = this;
     wx.request({
-      url: 'https://boobey.wangx1n.cn/gettestword', //仅为示例，并非真实的接口地址
+      url: 'http://localhost:8090/gettestword', //仅为示例，并非真实的接口地址
       header: {
         'content-type': 'application/json' // 默认值
       },

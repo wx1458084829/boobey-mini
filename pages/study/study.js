@@ -43,7 +43,7 @@ userlogin:function(e){
           console.log(res.code)
           //发起网络请求
           wx.request({
-            url: 'https://boobey.wangx1n.cn/openid',
+            url: 'http://localhost:8090/openid',
             data: {
               userinfo: e.detail.userInfo,
               code: res.code

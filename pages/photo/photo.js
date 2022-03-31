@@ -106,7 +106,7 @@ Page({
   translation:function(content){
     var that = this;
     wx.request({
-      url: 'https://boobey.wangx1n.cn/translate', //仅为示例，并非真实的接口地址
+      url: 'http://localhost:8090/translate', //仅为示例，并非真实的接口地址
       data: {
         q: content
       },
